@@ -47,6 +47,78 @@
 					<input class="form-control me-2" type="search" placeholder="Search"
 						aria-label="Search">
 					<button class="btn btn-outline-success" type="submit">Search</button>
+					<!-- Button trigger loginModal -->
+					<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+					  Login
+					</button>
+					<!-- Button trigger signUpModal -->
+					<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+					  SignUp
+					</button>					
+					<!-- loginModal -->
+					<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="loginModalLabel">Login to iMagic</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">				
+							<form>
+							<div class="mb-3">
+								<label for="loginFormEmail" class="form-label">Email
+									address</label> <input type="email" class="form-control"
+									id="loginFormEmail" placeholder="name@example.com">
+							</div>
+							<div class="mb-3">
+								<label for="loginUpFormPassword" class="form-label">Password
+								</label> <input type="password" class="form-control"
+									id="loginUpFormPassword" >
+							</div>	
+							</form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+			
+					<!-- signUpModal -->
+					<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="signUpModalLabel">SignUp for iMagic</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+						<div class="mb-3">
+							<label for="signUpFormEmail" class="form-label">Email
+								address</label> <input type="email" class="form-control"
+								id="signUpFormEmail" placeholder="name@example.com">
+						</div>
+						<div class="mb-3">
+							<label for="signUpFormPassword" class="form-label">Password
+							</label> <input type="password" class="form-control"
+								id="signUpFormPassword" >
+						</div>
+						<div class="mb-3">
+							<label for="signUpFormCPassword" class="form-label">Confirm Password
+							</label> <input type="password" class="form-control"
+								id="signUpFormCPassword">
+						</div>
+	
+					</form>
+	
+					      </div>
+					      <div class="modal-footer">
+					        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">SignUp</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</form>
 			</div>
 		</div>
